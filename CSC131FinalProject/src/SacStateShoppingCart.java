@@ -3,7 +3,7 @@
 public class SacStateShoppingCart {    
 	
 	public static void main(String[] args) {        
-		Catalog list = new Catalog("CS Gift Catalog");        
+		Catalog list = new Catalog("Bookstore Shopping Cart");        
 		list.add(new Item("silly putty", 3.95, 10, 19.99));        
 		list.add(new Item("silly string", 3.50, 10, 14.95));        
 		list.add(new Item("bottle o bubbles", 0.99));        
