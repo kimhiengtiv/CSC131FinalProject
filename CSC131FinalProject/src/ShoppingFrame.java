@@ -40,11 +40,11 @@ public class ShoppingFrame extends JFrame {
         pack();
     }
 
-    // Sets up the "discount" checkbox for the frame
+    // Sets up the "discount" check box for the frame
     private JPanel makeCheckBoxPanel() {
         JPanel p = new JPanel();
         p.setBackground(Color.blue);
-        final JCheckBox cb = new JCheckBox("qualify for discount");
+        final JCheckBox cb = new JCheckBox("Qualify for Discount");
         p.add(cb);
         cb.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

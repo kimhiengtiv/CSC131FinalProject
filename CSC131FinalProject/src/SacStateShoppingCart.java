@@ -3,6 +3,7 @@
 public class SacStateShoppingCart {    
 	
 	public static void main(String[] args) {        
+		
 		Catalog list = new Catalog("Bookstore Shopping Cart");        
 		list.add(new Item("silly putty", 3.95, 10, 19.99));        
 		list.add(new Item("silly string", 3.50, 10, 14.95));        
@@ -14,7 +15,8 @@ public class SacStateShoppingCart {
 		list.add(new Item("Rubik's cube", 9.10));        
 		list.add(new Item("Computer Science Barbie", 19.99));        
 		list.add(new Item("'Java Rules!' button", 0.99, 10, 5.0));        
-		list.add(new Item("'Java Rules!' bumper sticker", 0.99, 20, 8.95));        
+		list.add(new Item("'Java Rules!' bumper sticker", 0.99, 20, 8.95));      
+		
 		ShoppingFrame f = new ShoppingFrame(list);        
 		f.setVisible(true); 
 		f.setResizable(false);
