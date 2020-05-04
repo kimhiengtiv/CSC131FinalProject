@@ -68,7 +68,7 @@ public class ShoppingFrame extends JFrame {
     private void addItem(final Item product, JPanel p) {
         JPanel sub = new JPanel(new FlowLayout(FlowLayout.LEFT));
         // Change center color 
-        sub.setBackground(Color.white);
+        sub.setBackground(GOLD);
         final JTextField quantity = new JTextField(3);
         quantity.setHorizontalAlignment(SwingConstants.CENTER);
         quantity.addActionListener(new ActionListener() {
