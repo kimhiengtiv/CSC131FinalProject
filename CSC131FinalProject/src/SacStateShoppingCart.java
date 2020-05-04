@@ -5,17 +5,17 @@ public class SacStateShoppingCart {
 	public static void main(String[] args) {        
 		
 		Catalog list = new Catalog("Bookstore Shopping Cart");        
-		list.add(new Item("silly putty", 3.95, 10, 19.99));        
-		list.add(new Item("silly string", 3.50, 10, 14.95));        
-		list.add(new Item("bottle o bubbles", 0.99));        
-		list.add(new Item("Nintendo Wii system", 389.99));        
-		list.add(new Item("Mario Computer Science Party 2 (Wii)", 49.99));        
-		list.add(new Item("Don Knuth Code Jam Challenge (Wii)", 49.99));        
-		list.add(new Item("Computer Science pen", 3.40));      
-		list.add(new Item("Rubik's cube", 9.10));        
-		list.add(new Item("Computer Science Barbie", 19.99));        
-		list.add(new Item("'Java Rules!' button", 0.99, 10, 5.0));        
-		list.add(new Item("'Java Rules!' bumper sticker", 0.99, 20, 8.95));      
+		list.add(new Item("Sacramento State Notebook 70-Sheet", 3.79, 10, 30.00));        
+		list.add(new Item("Hornets #2 Round Pencil", 0.95, 10, 8.99));        
+		list.add(new Item("Sacramento State Cap", 22.00));        
+		list.add(new Item("Hydro Flask Bottle 32 oz Wide Mouth Lilac", 39.95));        
+		list.add(new Item("Apple Airpods 2nd Generation with Case", 159.99));        
+		list.add(new Item("Sacramento State 8.5'' x 11'' Windsor Diploma Frame", 215.99));        
+		list.add(new Item("Hooded Sweatshirt", 58.00));      
+		list.add(new Item("Sacramento State 20'' x 20'' Pillow", 196.00));        
+		list.add(new Item("Sacramento State Shorts", 42.00));        
+		list.add(new Item("Hornets Keystrap", 3.95, 10, 35.00));        
+		list.add(new Item("Hornets Sticker Sheet", 7.95, 20, 150.00));      
 		
 		ShoppingFrame f = new ShoppingFrame(list);        
 		f.setVisible(true); 

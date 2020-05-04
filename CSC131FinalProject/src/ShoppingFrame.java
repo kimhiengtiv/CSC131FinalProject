@@ -6,6 +6,10 @@ import java.awt.event.*;
 import java.text.*;
 
 public class ShoppingFrame extends JFrame {
+	
+	public static final Color GREEN = new Color(0, 78, 56);
+	public static final Color GOLD = new Color(196, 182, 129);
+	
     private ShoppingCart items;
     private JTextField total;
 
@@ -21,30 +25,34 @@ public class ShoppingFrame extends JFrame {
         total.setEnabled(false);
         total.setDisabledTextColor(Color.BLACK);
         JPanel p = new JPanel();
-        p.setBackground(Color.blue);
+        p.setBackground(GREEN);
         JLabel l = new JLabel("Order Total");
-        l.setForeground(Color.YELLOW);
+        l.setForeground(GOLD);
         p.add(l);
         p.add(total);
         add(p, BorderLayout.NORTH);
 
         p = new JPanel(new GridLayout(products.size(), 1));
+        p.setForeground(GREEN);
         for (int i = 0; i < products.size(); i++)
             addItem(products.get(i), p);
         add(p, BorderLayout.CENTER);
 
         p = new JPanel();
-       add(makeCheckBoxPanel(), BorderLayout.SOUTH);
+        add(makeCheckBoxPanel(), BorderLayout.SOUTH);
 
         // adjust size to just fit
         pack();
+        
     }
 
     // Sets up the "discount" check box for the frame
     private JPanel makeCheckBoxPanel() {
         JPanel p = new JPanel();
-        p.setBackground(Color.blue);
-        final JCheckBox cb = new JCheckBox("Qualify for Discount");
+        // Change bottom color 
+        p.setBackground(GREEN);
+        final JCheckBox cb = new JCheckBox("10% Student Discount");
+        cb.setForeground(GOLD);
         p.add(cb);
         cb.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -55,11 +63,12 @@ public class ShoppingFrame extends JFrame {
         return p;
     }
 
-    // adds a product to the panel, including a textfield for user input of
+    // adds a product to the panel, including a text field for user input of
     // the quantity
     private void addItem(final Item product, JPanel p) {
         JPanel sub = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        sub.setBackground(new Color(0, 180, 0));
+        // Change center color 
+        sub.setBackground(GOLD);
         final JTextField quantity = new JTextField(3);
         quantity.setHorizontalAlignment(SwingConstants.CENTER);
         quantity.addActionListener(new ActionListener() {
