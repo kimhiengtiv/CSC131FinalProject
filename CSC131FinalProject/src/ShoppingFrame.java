@@ -84,7 +84,7 @@ public class ShoppingFrame extends JFrame {
         });
         sub.add(quantity);
         JLabel l = new JLabel("" + product);
-        l.setForeground(Color.white);
+        l.setForeground(GREEN);
         sub.add(l);
         p.add(sub);
     }
