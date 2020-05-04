@@ -22,7 +22,7 @@ public class ShoppingFrame extends JFrame {
         total.setDisabledTextColor(Color.BLACK);
         JPanel p = new JPanel();
         p.setBackground(Color.blue);
-        JLabel l = new JLabel("order total");
+        JLabel l = new JLabel("Order Total");
         l.setForeground(Color.YELLOW);
         p.add(l);
         p.add(total);
