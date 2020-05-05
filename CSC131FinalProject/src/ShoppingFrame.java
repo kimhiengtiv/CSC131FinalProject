@@ -7,6 +7,7 @@ import java.text.*;
 
 public class ShoppingFrame extends JFrame {
 	
+	// Sac state color for the shopping cart 
 	private static final Color GREEN = new Color(0, 78, 56);
 	private static final Color GOLD = new Color(196, 182, 129);
 	
@@ -63,8 +64,7 @@ public class ShoppingFrame extends JFrame {
         return p;
     }
 
-    // adds a product to the panel, including a text field for user input of
-    // the quantity
+    // Add items tothe list 
     private void addItem(final Item product, JPanel p) {
         JPanel sub = new JPanel(new FlowLayout(FlowLayout.LEFT));
         // Change center color 
@@ -89,9 +89,7 @@ public class ShoppingFrame extends JFrame {
         p.add(sub);
     }
 
-    // When the user types a new value into one of the quantity fields,
-    // parse the input and update the ShoppingCart.  Display an error
-    // message if text is not a number or is negative.
+    // Update the items after the ENTER key 
     private void updateItem(Item product, JTextField quantity) {
         int number;
         String text = quantity.getText().trim();
