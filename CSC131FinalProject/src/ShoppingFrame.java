@@ -7,8 +7,8 @@ import java.text.*;
 
 public class ShoppingFrame extends JFrame {
 	
-	public static final Color GREEN = new Color(0, 78, 56);
-	public static final Color GOLD = new Color(196, 182, 129);
+	private static final Color GREEN = new Color(0, 78, 56);
+	private static final Color GOLD = new Color(196, 182, 129);
 	
     private ShoppingCart items;
     private JTextField total;
