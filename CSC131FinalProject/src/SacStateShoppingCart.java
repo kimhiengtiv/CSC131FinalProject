@@ -1,10 +1,12 @@
 // Sacramento State book store shopping cart 
 // Name:
-// Ivince Pajarin
-// Kimhieng Tiv
-// Saul Chavez
-// Marco Pablo.
-// Duy Huynh
+/* 
+ * Ivince Pajarin
+ * Kimhieng Tiv
+ * Saul Chavez
+ * Marco Pablo
+ * Duy Huynh
+ */
 
 
 public class SacStateShoppingCart {    
