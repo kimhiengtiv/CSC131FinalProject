@@ -1,5 +1,6 @@
 // Sacramento State book store shopping cart 
-
+// Name:
+// Ivince Pajarin
 public class SacStateShoppingCart {    
 	
 	public static void main(String[] args) {        
