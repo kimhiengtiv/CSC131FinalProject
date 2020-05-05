@@ -15,7 +15,8 @@ public class SacStateShoppingCart {
 		list.add(new Item("Sacramento State 20'' x 20'' Pillow", 196.00));        
 		list.add(new Item("Sacramento State Shorts", 42.00));        
 		list.add(new Item("Hornets Keystrap", 3.95, 10, 35.00));        
-		list.add(new Item("Hornets Sticker Sheet", 7.95, 20, 150.00));      
+		list.add(new Item("Hornets Sticker Sheet", 7.95, 20, 150.00));
+		list.add(new Item("Socks", 8.00, 20, 200));
 		
 		ShoppingFrame f = new ShoppingFrame(list);        
 		f.setVisible(true); 
