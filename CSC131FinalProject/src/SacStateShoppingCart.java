@@ -3,6 +3,7 @@
 // Ivince Pajarin
 // Kimhieng Tiv
 // Saul Chavez
+// Marco Pablo.
 
 
 public class SacStateShoppingCart {    
